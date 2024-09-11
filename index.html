@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Identification</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Identification </h1>
+      <i>(Image Identification by tensorflow.js and Mobilenet)</i>
+      
+      <label id="customFileInput" for="imageInput">Choose Image</label>
+      <input type="file" id="imageInput" accept="image/*" />
+      <div class="spinner" id="spinner"></div>
+      <div class="loading-text" id="loadingText">Analyzing Image...</div>
+      <img id="selectedImage" width="300" />
+      <div id="predictionResult"></div>
+      <script src="./main.js"></script>
+    </div>
+  </body>
+</html>
